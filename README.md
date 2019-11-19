@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-This repository hosts my technical portfolio built using [TechFolio](http://techfolios.github.io). 
+This repo hosts my professional portfolio.It was created using VanillaJS,jquery,bootstrap,particles.js,css and html. 
 
 
 
