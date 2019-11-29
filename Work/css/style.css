@@ -1,0 +1,47 @@
+#particle-js{
+    height:100vh;
+  }
+  
+  body{
+    margin:0;
+  }
+  
+  #centerjunior{
+    position: absolute;
+    text-align:center;
+    font-size:400%;
+    top:50%;
+    width:100%;
+    line-height:0.4em;
+    font-family: 'Tomorrow', sans-serif;
+  }
+  
+  /* @media only screen and (max-width: 1200px) {
+    #centerjunior{
+      font-size:200%;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    #centerjunior{
+      font-size:60%;
+    }
+  }
+  @media only screen and (max-width:700px)and (orientation : portrait) { /*for phones */
+    /* #centerjunior{
+      font-size:5px;
+    }
+  
+  } */ 
+  .nav{
+    /* list-style-type: none; */
+    /* position: absolute; */
+    font-family: 'Tomorrow', sans-serif;
+  }
+  .socialimgs{
+    width:5%;
+    height:5%;
+  }
+  a{
+    text-decoration: none;
+    color:black;
+  }
