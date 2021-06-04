@@ -18,6 +18,42 @@
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.js" integrity="sha512-rMaqGbYalDaQz0lWNF2L8DHPtf4NW+gSZomExS0LcsNyRS4Rmj21+dt97XfXCZE/E569eX72Bh//Jt1EpStgiA==" crossorigin="anonymous"></script>
     </head>
+    <style>
+        .typingtext{
+            color: #6c757d
+        }
+        .myname{
+            font-size: 6vw;
+        }
+        .container p {
+        font-size: 3vw;
+        padding: 0.5rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        text-align: center;
+        overflow: hidden;
+        }
+        .container p span.typed-text {
+        font-weight: normal;
+        }
+        .container p span.cursor {
+        display: inline-block;
+        background-color: #ccc;
+        margin-left: 0.1rem;
+        width: 3px;
+        animation: blink 1s infinite;
+        }
+        .container p span.cursor.typing {
+        animation: none;
+        }
+        @keyframes blink {
+        0%  { background-color: #ccc; }
+        49% { background-color: #ccc; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: #ccc; }
+        }
+    </style>
     <body id="page-top">
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg bg-white text-uppercase fixed-top" id="mainNav">
@@ -41,7 +77,10 @@
         <header class="masthead bg-white text-black">
             <div class="container d-flex align-items-center flex-column">
                     <!-- p5 canvas -->
-                    <h1>Junior Francisco Garcia</h1>             
+                    <h1 class="myname">Junior Francisco Garcia</h1> 
+                    <div class="container">
+                        <p> > <span class="typed-text typingtext"></span><span class="cursor">&nbsp;</span></p>
+                    </div>           
             </div>
         </header>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
@@ -55,5 +94,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
         <!-- Contact form JS-->
         <!-- Core theme JS-->
+        <script src="type.js"></script>
+
     </body>
 </html>
